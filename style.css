@@ -1,0 +1,185 @@
+/* Resetando margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Paleta de Cores */
+:root {
+    --cor-fundo: #f4f4f4;
+    --cor-principal: #4CAF50;
+    --cor-secundaria: #333;
+    --cor-texto: #555;
+    --cor-destaque: #ff5722;
+    --cor-botao: #4CAF50;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+/* Navegação */
+nav {
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--cor-principal);
+    margin-top: 20px;
+}
+
+/* Seções */
+section {
+    margin-bottom: 40px;
+}
+
+section p {
+    font-size: 1rem;
+    color: var(--cor-texto);
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    font-size: 1rem;
+    color: var(--cor-texto);
+}
+
+/* Blockquote */
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: var(--cor-fundo);
+    border-left: 5px solid var(--cor-destaque);
+    color: var(--cor-secundaria);
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+}
+
+form button {
+    background-color: var(--cor-botao);
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--cor-destaque);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    form button {
+        font-size: 1rem;
+    }
+}
